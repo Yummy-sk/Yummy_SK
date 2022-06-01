@@ -11,6 +11,8 @@ export const GlobalStyle = createGlobalStyle`
     ::-webkit-scrollbar {
         display: none;
     }
+
+    
     html{
         font-size: 11px;
         -webkit-text-size-adjust: none;
@@ -22,6 +24,13 @@ export const GlobalStyle = createGlobalStyle`
         -ms-overflow-style: none;
         scrollbar-width: none;
     }
+
+    body{
+        width: 100%;
+        height: 100%;
+        background-color: #282c35;
+    }
+
     button {
         background: none;
         padding: 0;

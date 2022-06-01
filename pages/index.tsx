@@ -1,15 +1,19 @@
 import type { NextPage } from 'next';
 import styled from 'styled-components';
 
-const Temp = styled.div`
-  color: red;
+const Container = styled.div`
+  width: 100%;
+  height: 100%;
+
+  padding: 1rem;
 `;
 
 const Home: NextPage = () => {
   return (
-    <Temp>
+    <Container>
       <h1>Hello World</h1>
-    </Temp>
+      <h1>Hello World</h1>
+    </Container>
   );
 };
 
