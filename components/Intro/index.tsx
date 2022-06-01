@@ -2,21 +2,21 @@ import { useEffect } from 'react';
 import * as S from './style';
 
 export function Intro() {
-  const scrollLogic = ({ allText }: { allText: NodeListOf<Element> }) => {
+  const scrollLogic = ({ texts }: { texts: NodeListOf<Element> }) => {
     const scrollBox = document.querySelector('.scroll-box') as Element;
     const dis = window.pageYOffset / ((scrollBox.offsetHeight - window.innerHeight) / 4);
     const gap = 1;
-    allText.forEach(function (arr: any, index) {
-      arr.style = '--progress:' + Math.max(0, dis - index * gap) + '';
+    texts.forEach((text: Element, index: number) => {
+      text.style = '--progress:' + Math.max(0, dis - index * gap) + '';
     });
   };
 
   useEffect(() => {
-    const allText = document.querySelectorAll('.text');
+    const texts = document.querySelectorAll('.text');
 
-    window.addEventListener('scroll', () => scrollLogic({ allText }));
+    window.addEventListener('scroll', () => scrollLogic({ texts }));
 
-    return () => window.removeEventListener('scroll', () => scrollLogic({ allText }));
+    return () => window.removeEventListener('scroll', () => scrollLogic({ texts }));
   }, []);
 
   return (
