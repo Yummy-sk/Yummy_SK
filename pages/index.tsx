@@ -12,6 +12,7 @@ const Home: NextPage = () => {
     <Container>
       <Intro />
       <About />
+      <div style={{ width: '100%', height: '100vh' }}></div>
     </Container>
   );
 };

@@ -47,11 +47,10 @@ export const Container = styled.section<{ height: number }>`
 export const Wrapper = styled.div`
   position: fixed;
   left: 0;
-  top: 0;
+  top: 50%;
 
   width: 100%;
-  height: 100vh;
-
+  height: fit-content;
   .text {
     position: absolute;
     left: 0;
@@ -68,9 +67,12 @@ export const Wrapper = styled.div`
     animation-delay: calc(var(--progress) * -1s);
   }
   .text.b,
-  .text.c,
-  .text.d {
+  .text.c {
     animation: ${remainInOut} 1s linear forwards paused;
+    animation-delay: calc(var(--progress) * -1s);
+  }
+  .text.d {
+    animation: ${remainInOut} 1.5s linear forwards paused;
     animation-delay: calc(var(--progress) * -1s);
   }
 `;

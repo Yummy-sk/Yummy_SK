@@ -25,7 +25,7 @@ export function Intro() {
   }, [windowHeight]);
 
   return (
-    <S.Container className="scroll-box" height={Number(windowHeight) * 4}>
+    <S.Container className="scroll-box" height={Number(windowHeight) * 5}>
       <S.Wrapper>
         <p className="text a">염상권</p>
         <p className="text b">Yemmy-sk</p>
