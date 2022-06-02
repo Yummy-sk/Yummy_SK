@@ -60,7 +60,7 @@ export const PhotoSection = styled.div`
   justify-content: space-between;
 
   &.reveal {
-    animation: ${photoReveal} 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: ${photoReveal} 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
 
   animation: ${photoHide} 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -93,7 +93,7 @@ export const InfoSection = styled.div`
   margin-bottom: 500px;
 
   &.reveal {
-    animation: ${infoReveal} 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: ${infoReveal} 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
 
   animation: ${infoHide} 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
