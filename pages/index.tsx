@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import { Intro } from 'components/Intro';
+import { Intro, About } from 'components';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -11,6 +11,7 @@ const Home: NextPage = () => {
   return (
     <Container>
       <Intro />
+      <About />
     </Container>
   );
 };

@@ -41,6 +41,13 @@ class MyDocument extends Document {
           <meta name="keywords" content="염상권, 개발자 염상권, Sang Kwon Yeum, Sang Kwon, Yummy, Yummy-sk, Yummy_SK" />
           <meta name="description" content="Website made by Yummy (Sang Kwon Yeum)" />
           <meta name="theme-color" content="#000000" />
+
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Oswald:wght@500&family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <Main />

@@ -16,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
     html{
         font-size: 11px;
         -webkit-text-size-adjust: none;
-        font-family: -apple-system,BlinkMacSystemFont,helvetica,Apple SD Gothic Neo,sans-serif;       
+        font-family: 'Montserrat', sans-serif;        
         font-display: fallback;
         ${media.tablet}{
             font-size: 10px;
@@ -28,7 +28,7 @@ export const GlobalStyle = createGlobalStyle`
     body{
         width: 100%;
         height: 100%;
-        background-color: #282c35;
+        background-color: #000000;
     }
 
     button {

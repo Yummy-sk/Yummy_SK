@@ -1,7 +1,9 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import * as S from './style';
 
 export function Intro() {
+  const [windowHeight, setWindowHeight] = useState(0);
+
   const scrollLogic = ({ texts }: { texts: NodeListOf<Element> }) => {
     const scrollBox = document.querySelector('.scroll-box') as Element;
     const dis = window.pageYOffset / ((scrollBox.offsetHeight - window.innerHeight) / 4);
@@ -12,15 +14,18 @@ export function Intro() {
   };
 
   useEffect(() => {
+    setWindowHeight(window.innerHeight);
+
+    console.log(windowHeight);
     const texts = document.querySelectorAll('.text');
 
     window.addEventListener('scroll', () => scrollLogic({ texts }));
 
     return () => window.removeEventListener('scroll', () => scrollLogic({ texts }));
-  }, []);
+  }, [windowHeight]);
 
   return (
-    <S.Container className="scroll-box">
+    <S.Container className="scroll-box" height={Number(windowHeight) * 4}>
       <S.Wrapper>
         <p className="text a">염상권</p>
         <p className="text b">Yemmy-sk</p>

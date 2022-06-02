@@ -39,9 +39,9 @@ const remainInOut = keyframes`
 
 `;
 
-export const Container = styled.section`
+export const Container = styled.section<{ height: number }>`
   width: 100%;
-  height: 5000px;
+  height: ${props => props.height}px;
 `;
 
 export const Wrapper = styled.div`
@@ -55,7 +55,7 @@ export const Wrapper = styled.div`
   .text {
     position: absolute;
     left: 0;
-    top: 45%;
+    top: 40%;
     width: 100%;
     text-align: center;
     color: #fff;
@@ -63,6 +63,7 @@ export const Wrapper = styled.div`
   }
 
   .text.a {
+    font-weight: bold;
     animation: ${firstInOut} 1s linear forwards paused;
     animation-delay: calc(var(--progress) * -1s);
   }
