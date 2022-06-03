@@ -89,14 +89,13 @@ const TextContent = ({ info }: { info: IInfo }) => {
 
 export function About() {
   const handleScroll = ({ photoSection, infoSection }: { photoSection: Element; infoSection: Element }) => {
-    const revealPoint = window.innerHeight * 5 - (window.innerHeight - 50);
+    const revealPoint = 4500;
     const currentScroll = window.scrollY;
 
     if (currentScroll > revealPoint) {
-      console.log('reveal');
       photoSection.classList.add('reveal');
       infoSection.classList.add('reveal');
-    } else if (currentScroll < revealPoint + 300) {
+    } else if (currentScroll < revealPoint) {
       photoSection.classList.remove('reveal');
       infoSection.classList.remove('reveal');
     }

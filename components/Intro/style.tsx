@@ -41,7 +41,7 @@ const remainInOut = keyframes`
 
 export const Container = styled.section<{ height: number }>`
   width: 100%;
-  height: ${props => props.height}px;
+  height: 5000px;
 `;
 
 export const Wrapper = styled.div`
