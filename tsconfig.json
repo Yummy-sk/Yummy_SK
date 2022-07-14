@@ -19,7 +19,9 @@
       "components/*": ["components/*"],
       "config/*": ["config/*"],
       "pages/*": ["pages/*"],
-      "styles/*": ["styles/*"]
+      "styles/*": ["styles/*"],
+      "stories/*": ["stories/*"],
+      ".storybook/*": [".storybook/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
